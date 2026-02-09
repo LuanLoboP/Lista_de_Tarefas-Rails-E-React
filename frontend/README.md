@@ -51,7 +51,7 @@ Antes de começar, você precisará ter instalado em sua máquina:
 1. **Clone o repositório:**
 
    ```bash
-   git clone <>
+   git clone <https://github.com/LuanLoboP/Lista_de_Tarefas-Rails-E-React.git>
 
    ```
 
