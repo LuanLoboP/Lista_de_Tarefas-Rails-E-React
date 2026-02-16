@@ -23,17 +23,7 @@ Uma API RESTful faz => Uma arquitetura de comunicação que utiliza métodos HTT
 
 O frontend foi configurado para consumir uma API Rails que rodei localmente.
 
-**URL Base:** `http://localhost:3000`
-
-### Endpoints Principais:
-
-| Método | Endpoint | Descrição |
-
-| **GET** | `/tasks` | Retorna todas as tarefas do banco MySQL. |
-| **POST** | `/tasks` | Envia uma nova tarefa para ser salva. |
-| **DELETE** | `/tasks/:id` | Remove uma tarefa específica pelo ID. |
-
----
+**URL Base:** `http://localhost:3001`
 
 ## Pré-requisitos
 
@@ -42,7 +32,7 @@ Antes de começar, você precisará ter instalado em sua máquina:
 - [Node.js](https://nodejs.org/) V20+
 - [npm](https://www.npmjs.com/)
 
-* configurado e rodando (Porta 3000)
+* configurado e rodando (Porta 3001)
 
 ---
 
@@ -76,8 +66,8 @@ Antes de começar, você precisará ter instalado em sua máquina:
 
 O projeto vai pedir para rodar na porta 3001 (Só digitar Y, no terminal), pois o _Rails_ está rodando na porta 3000 http://localhost:3001
 
-**Observações Importantes**
+**Observações Importantes para rodar o projeto**
 
 ->>>> O backend (API) deve estar ativo para que as tarefas sejam carregadas.
 
-->>>> Certifique-se de que o CORS está configurado no Rails para permitir as requisições da porta 3001. As vezes pode não ser nescessário, testei sem essa gem e consigui criar e deletar até o momento, mas para evitar é melhor usa-lá.
+->>>> Certifique-se de que o CORS está configurado no Rails para permitir as requisições da porta 3001.

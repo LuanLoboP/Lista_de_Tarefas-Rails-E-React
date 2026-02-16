@@ -73,15 +73,32 @@ Tabela principal: _tasks_
    ```
 
 5. **Inicie o servidor:**
+
    ```bash
    rails server
    ```
 
-A API vai estar no: _http://localhost:3000_
+   A API vai estar no: _http://localhost:3000_
+
+6. **Para ver se a API está retornando os dados do banco**
+
+-> http://localhost:3000/tasks
 
 **CORS**
 O projeto utiliza a gem rack-cors para permitir requisições vindas do frontend que esta rodando em outra porta a : localhost:3001
 
 _Algumas observações de estudo:_
 
-- O backend foi desenvolvido no modo API-only.
+- O backend foi desenvolvido na forma API-only.
+
+# Métodos HTTP
+
+## GET (busca dados),
+
+## POST (cria dados),
+
+## PUT (atualiza totalmente),
+
+## PATCH (atualiza parcialmente)
+
+## DELETE (remove)
