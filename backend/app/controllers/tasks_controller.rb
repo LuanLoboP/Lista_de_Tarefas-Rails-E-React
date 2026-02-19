@@ -4,8 +4,13 @@ class TasksController < ApplicationController
   end
 
   def create #cria
-    task = Task.create(task_params)
-    render json: task
+    task = Task.create(task_params) 
+
+    if task.save
+      render json: task, status: :created
+    else 
+      render json: {errors: task.errors.full_messages}, status: :unprocessable_entity
+    end
   end
 
   def update
@@ -22,7 +27,7 @@ class TasksController < ApplicationController
     head :no_content
   end
 
-  private
+  private # Só pode ser chamada aqui!
 
   def task_params
     params.require(:task).permit(:title, :completed)

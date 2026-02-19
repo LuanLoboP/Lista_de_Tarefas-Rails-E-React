@@ -1,5 +1,7 @@
 .container {
-  max-width: 400px;
+  width: 800px;
+  max-width: 100%;
+  margin: 0 auto;
   margin: 50px auto;
   font-family: Arial, sans-serif;
 }
@@ -20,8 +22,21 @@ button {
 }
 
 ul {
+  max-height: 400px;
+  overflow-y: auto;
+  padding-right: 10px;
+  margin-top: 20px;
   padding: 0;
   margin-top: 20px;
+}
+
+ul::-webkit-scrollbar {
+  width: 8px;
+}
+
+ul::-webkit-scrollbar-thumb {
+  background-color: #b99d9d;
+  border-radius: 10px;
 }
 
 .todo-item {
