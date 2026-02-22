@@ -9,14 +9,7 @@ type Props = {
   onToggle: (id: number, completar: boolean) => void;
 };
 
-export function TodoItem({
-  id,
-  texto,
-  completed,
-  onRemove,
-  onEdit,
-  onToggle,
-}: Props) {
+export function TodoItem({ id, texto, completed, onRemove, onEdit, onToggle }: Props) {
   const [editando, setEditando] = useState(false);
   const [valor, setValor] = useState(texto);
 
