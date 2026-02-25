@@ -1,7 +1,7 @@
 class TasksController < ApplicationController
-  def index
+  def index 
     render json: Task.all
-  end
+  end 
 
   def create #cria
     task = Task.create(task_params) 
